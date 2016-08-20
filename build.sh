@@ -95,7 +95,7 @@ ToolChainName=arm-unknown-linux-gnueabi
 #
 # If $BrewHome does not alread contain HomeBrew, download and install it. 
 # Install the required HomeBrew packages.
-#
+
 # Modified by Gabriel.Kim.
 # If brew File doesn't exist, then execute of brew installation sequence.
 # And update and upgrade.
@@ -110,7 +110,7 @@ function buildBrewDepends()
     echo "Updating HomeBrew tools..."
     brew update
     brew upgrade
-    set +e
+	set +e
 	brew install $BrewTools && true
 	brew install $BrewToolsExtra && true
     set -e

@@ -1,6 +1,7 @@
 # Raspberry Pi Cross Compiler Script for OSX
 
 Author: Rick Boykin
+Modifier: Doohoon Kim(Gabriel.kim, invi.dh.kim@gmail.com)
 
 Installs a gcc cross compiler for compiling code for raspberry pi on OSX.
 This script is based on several scripts and forum posts I've found around 
@@ -47,3 +48,7 @@ PATH=/Volumes/CrossToolNG/install/arm-unknown-linux-gnueabi/bin:$PATH arm-linux-
 ```
 
 Go forth and compile.
+
+Write for Modification(Doohoon Kim):
+
+Original script does creating CrossTool2NG Image in MAC OS X with /Volumes(Why do this?) and installing 'brew' to another Path(Cleary, Tools have contain all of one, existing 'brew' users don't need creating in a root under /brew2. Existing 'brew' users, force installing duplicate 'brew'. WTH???). So in this script, I revised in this script that User prevent installing to create unnessery CrossTool2NG Image in MAC volume(contain with /Volumes/*) and 'brew'.
