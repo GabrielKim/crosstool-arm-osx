@@ -1,6 +1,7 @@
 # Raspberry Pi Cross Compiler Script for OSX
 
 Author: Rick Boykin
+
 Modifier: Doohoon Kim(Gabriel.kim, invi.dh.kim@gmail.com)
 
 Write for Modification(Doohoon Kim):
